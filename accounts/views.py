@@ -5,7 +5,6 @@ from django.http import HttpResponse
 from . models import GuestUser
 from django.core.mail import BadHeaderError, send_mail
 from GTech . settings import EMAIL_HOST_USER
-from django.db import transaction
 
 class IndexView(TemplateView):
     template_name = "main2.html"
@@ -20,10 +19,6 @@ class SoftwareDevelopmentView(TemplateView):
     template_name = "more-software-development.html"
 
 
-
-
-
-@transaction.atomic
 def ContactFormView(request):
     if request.method == 'POST':
         name = request.POST['user_name']
