@@ -1,0 +1,308 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="{% static 'css/bootstrap.min.css'%}" rel="stylesheet"> 
+    
+    <link href="{% static 'main2.css' %}" rel="stylesheet">
+
+    <link href="{% static 'fontawesome/css/all.css'%}" rel="stylesheet">
+
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    
+    
+    
+    <title>Gtech</title>
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar">
+        <div class="container">
+          <a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'index' %}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-us">Contact</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+
+    <!--./END NAVBAR-->
+
+    <!--CAROUSEL-->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner text-center">
+        <div class="carousel-item active karousel-1">
+          <h1>Responsive <br> web design</h1>
+        </div>
+        <div class="carousel-item karousel-2">
+          <h1>Creative <br> graphic designs</h1>      
+        </div>
+        <div class="carousel-item karousel-3">
+          <h1>Simple <br> high performance softwares</h1>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+    <!--./END CAROUSEL-->
+
+    
+
+
+    <!--SERVICES-INTRO-->
+
+    <div class="container-fluid" id="services">
+      <h1 class="service-intro"> <strong> What we do best</strong></h1><hr>
+    </div>
+
+    <!--./END SERVICES-INTRO-->
+
+
+    <!--SERVICES SECTION-->
+    <div class="container-fluid">
+      <div class="row mx-0 px-0">
+            <div class="col-xs-12 col-lg-6 col-sm-6 py-3 service-1">
+              <img src="{% static 'images/Web-Development.png'%}" class="img-responsive rounded" width="100%" alt="...">
+            </div>
+
+            <div class="col-xs-12 col-lg-6 col-sm-6">
+              <h2 class="service-title">Web Design</h2>
+              <p class="paragraph">
+                Good website is good business
+              </p>
+              <div class="More text-center">
+                <a href="{% url 'web-design' %}" class="btn btn-outline-success btn-lg" role="button">More...</a>
+
+              </div>
+
+            </div>
+
+      <div class="row mx-0 px-0">
+        <div class="col-xs-12 col-lg-6 col-sm-6 py-3 service-2">
+          <img src="{% static 'images/TECHTENUM2.png'%}" class="img-fluid rounded" width="100%" alt="...">
+        </div>
+
+        <div class="col-xs-12 col-lg-6 col-sm-6">
+          <h2 class="service-title">Graphics Design</h2>
+          <p class="paragraph">
+            Great designs add value, let it speak for you.
+          </p>
+          <div class="More text-center">
+            <a href="{% url 'graphics-design' %}" class="btn btn-outline-success btn-lg" role="button">More...</a>
+
+          </div>
+        </div>
+
+      <div class="row mx-0 px-0">
+        <div class="col-xs-12 col-lg-6 col-sm-6 py-3 service-3">
+          <img src="{% static 'images/Software-Development.png'%}" class="img-respnsive rounded" width="100%" alt="...">
+        </div>
+        <div class="col-xs-12 col-lg-6 col-sm-6">
+          <h2 class="service-title">Software Development</h2>
+          <p class="paragraph">
+            Want more accountabilty, easy record and transactions management?
+          </p>
+          <div class="More text-center">
+            <a href="{% url 'software-development' %}" class="btn btn-outline-success btn-lg" role="button">More...</a>
+
+            
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--./END SERVICES SECTION-->
+
+
+    <!--ABOUT US INTRO-->
+
+    <div class="container-fluid mt-5" id="about">
+      <h1 class="about-intro"> <strong> About us</strong></h1><hr>
+    </div>
+
+    <!--./END ABOUT US-INTRO-->
+
+    <!--ABOUT US SECTION-->
+    <div class="container-fluid" id="about-us">
+      <div class="row mx-0 px-0">
+        <div class="col-xs-12 col-sm-6 col-lg-6">
+          <img src="{% static 'images/molym.png'%}" class="img-responsive rounded" width="100%" alt="...">
+
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-6 column-right">
+          <p class="paragraph">
+            At Go-tech we believe there is the easy way to sell your product and the best way to sell your product is our focus. Our aim is to give your product the outlook it should have to attract more customers through web, graphics design and business software development.
+          </p> 
+        </div>
+      </div>
+    </div>
+    <!--./END ABOUT SECTION-->
+
+
+
+
+
+
+    <!--CONTACT US-->
+    <div class="container-fluid">
+      <div class="contact-us-intro mt-5" id="contact-us">
+        <h1><strong> Contact Us </strong></h1>
+        <hr>
+
+        <div class="container-fluid contact-us-wrapper">
+          <div class="...">
+            <div class="row justify-content-center">
+              <div class="col-sm-12 col-md-12 col-lg-6 p-5">
+                <div class="direct-mail text-center bg-dark">
+                  <div class="contact-form">
+                    <form action="{% url 'ContactForm' %}" method="POST">
+                      {% csrf_token %}
+                      <div class="pt-3">
+                        <label for="name" class="form-label">User name</label>
+                        <input type="text" class="form-control" id="name-field" name="user_name" required>
+                      </div>
+                      <div class="pt-0">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email-field" name="user_email" required>
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                      </div>
+                      <div class="pt-3">
+                        <label class="form-label" for="message">Message</label>
+                        <textarea class="form-control" id="message-field" rows="4" name="user_message" required></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-outline-success">Send message</button>
+                    </form>
+
+
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <!--./END CONTACT US-->
+
+
+    <!--FOOTER-SECTION-->
+    <div class="container-fluid">
+      <footer class="text-center text-white mt-0">
+        <div class="social-media pt-5 pb-5">
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+    
+          <!-- Twitter -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+    
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+    
+          <!-- Linkedin -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </div>
+      
+        <!-- Copyright -->
+        <div class="text-center" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2020 Copyright:
+          <a class="text-white" href="https://gtechsolutions.com/">gtechsolutions.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </div>
+    <!--./END FOOTER SECTION-->
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+      
+
+
+
+          
+    
+
+    
+
+    
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

@@ -1,0 +1,69 @@
+{% extends 'common.html' %}
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    {% block content %}
+    <div class="graphics-services">
+        <div class="row">
+            <div class="card-group text-dark text-center">
+                <div class="col-sm-6 col-md-4 pb-2">
+                    <div class="card">
+                        <img src="{% static 'images/techtenum-logo.png' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h2 class="card-title">Logo and identity</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 pb-2">
+                    <div class="card">
+                        <img src="{% static 'images/shirt-design.png' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h2 class="card-title">T-shirt design</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 pb-2">
+                    <div class="card">
+                        <img src="{% static 'images/Web-Development.png' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h2 class="card-title">Business Card</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 pb-2">
+                    <div class="card">
+                        <img src="{% static 'images/TECHTENUM1.png' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h2 class="card-title">Marketing brochure</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="card">
+                        <img src="{% static 'images/soc.png' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h2 class="card-title">Flyers and posters</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+               
+    </div>
+
+
+    
+
+    {% endblock %}
+    
+</body>
+</html>

@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(255, 255, 255);
+    background-color: #323a45;
+    }
+
+    a{
+        color: #b1b4bd;
+        font-weight: 500;
+    }
+
+    a:hover{
+        color: #0ca024;
+        text-decoration: none;
+        transition: 500ms;
+    }
+
+    .navbar{
+        background-color: rgba(5, 0, 8);
+        min-height: 90px;
+        overflow: hidden;
+        width: 100%;
+
+    }
+
+   .nav-link{
+       color: #ffffff;
+       
+   }
+
+   .navbar-toggler{
+     border: none;
+     padding: 10px 6px;
+     outline: none;
+
+   }
+
+   .navbar-toggler span{
+     display: block;
+     width: 22px;
+     height: 2px;
+     border: 1px;
+     background: #ffffff ;
+   }
+
+   .navbar-toggler span + span{
+    margin-top: 4px;
+    width: 22px;
+  }
+
+  .navbar-toggler span + span + span{
+    width: 22px;
+  }
+
+  .karousel-1{
+    background: linear-gradient(rgba(40, 58, 90, 0.7), rgba(40, 58, 90, 0.7)), url("images/slider-1.jpg") fixed center center;
+    background-size: cover;
+    height: 70vh;
+    padding: 180px 0px;
+    
+  }
+
+  .karousel-2{
+    background: linear-gradient(rgba(40, 58, 90, 0.7), rgba(40, 58, 90, 0.7)), url("images/slider-2.jpg") fixed center center;
+    background-size: cover;
+    height: 70vh;
+    padding: 180px 0px;
+  }
+
+  .karousel-3{
+    background: linear-gradient(rgba(40, 58, 90, 0.7), rgba(40, 58, 90, 0.7)), url("images/slider-5.jpg") fixed center center;
+    background-size: cover;
+    height: 70vh;
+    padding: 180px 0px;
+  }
+
+
+   .service-intro{
+       padding: 2rem 0rem 0rem 0rem;
+   }
+
+
+    .paragraph{
+        margin-top: 0px;
+        padding: 3rem 5rem;
+        font-size: 1.1rem;
+        line-height: 1.4;
+        text-align: justify;
+    }
+
+
+    .service-title{
+        margin-top: 0rem;
+        margin-bottom: 0;
+        padding: 1rem 0rem 0rem 0rem;
+        text-align: center;
+
+
+    }
+
+    .service-section{
+        margin-top: 0px;
+        padding-left: 0rem;
+    }
+
+    .contact-wrap{
+      background: linear-gradient(180deg, rgba(49,49,157,1) 50%, rgba(238,86,122,1) 92%);
+    }
+
+
+    .contact-us-wrapper{
+      background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("images/cta-bg.jpg") fixed center center;
+      background-size: cover;
+    }
+
+
+
+    .direct-mail{
+        height: 80vh;
+        border-radius: 10px;
+    }
+
+
+    .contact-form{
+        padding: 3rem 2rem 3rem 2rem;
+        color: #ffffff;
+    }
+
+
+    footer{
+      background-color: #000000; 
+    }
+
+
+    .more-web-design{
+        position: relative;
+        height: 500px;
+        overflow: hidden;
+        background: url('images/more-webdesign-bg.png') no-repeat center;
+        background-size: cover;
+        
+        
+    }
+
+    .caption{
+        position: absolute;
+        top: 40%;
+        left: 34%;
+        transform: translate(-50px, -100px);
+        overflow: hidden;
+        font-weight: 700;
+        
+
+    }
+
+    .caption p{
+        font-size: 6.8vh;
+        
+    }
+
+    .far{
+        color: #05fd2e;
+        
+    }
+
+    .gradient{
+        background: rgb(228,7,227);
+        background: linear-gradient(90deg, rgba(228,7,227,1) 0%, rgba(42,104,228,1) 100%); 
+
+    }
+
+
+
+    .glass-background{
+        min-height: 100vh;
+        background: rgb(161,53,237);
+        background: linear-gradient(135deg, rgba(161,53,237,1) 0%, rgba(42,74,228,1) 100%);  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+
+
+    #hero {
+        width: 100%;
+        height: 95vh;
+        background: rgb(161,53,237);
+        background: linear-gradient(135deg, rgba(161,53,237,1) 0%, rgba(42,74,228,1) 100%); 
+      }
+      
+      #hero .container {
+        padding-top: 140px;
+      }
+      
+      #hero h1 {
+        margin: 0 0 10px 0;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 56px;
+        color: #fff;
+      }
+      
+      #hero h2 {
+        color: rgba(255, 255, 255, 0.6);
+        margin-bottom: 50px;
+        font-size: 24px;
+      }
+      
+      
+      
+      #hero .animated {
+        animation: up-down 2s ease-in-out infinite alternate-reverse both;
+      }
+      
+      @media (max-width: 991px) {
+        #hero {
+          height: 100vh;
+          text-align: center;
+        }
+        #hero .animated {
+          -webkit-animation: none;
+          animation: none;
+        }
+        #hero .hero-img {
+          text-align: center;
+        }
+        #hero .hero-img img {
+          width: 50%;
+        }
+      }
+      
+      @media (max-width: 768px) {
+        #hero h1 {
+          font-size: 28px;
+          line-height: 36px;
+        }
+        #hero h2 {
+          font-size: 18px;
+          line-height: 24px;
+          margin-bottom: 30px;
+        }
+        #hero .hero-img img {
+          width: 70%;
+        }
+      }
+      
+      @media (max-width: 575px) {
+        #hero .hero-img img {
+          width: 80%;
+        }
+        #hero .btn-get-started {
+          font-size: 16px;
+          padding: 10px 24px 11px 24px;
+        }
+      }
+      
+      @-webkit-keyframes up-down {
+        0% {
+          transform: translateY(10px);
+        }
+        100% {
+          transform: translateY(-10px);
+        }
+      }
+      
+      @keyframes up-down {
+        0% {
+          transform: translateY(10px);
+        }
+        100% {
+          transform: translateY(-10px);
+        }
+      }
+
+
+
+    /*--------------------------------------------------------------
+# Cta
+--------------------------------------------------------------*/
+.cta {
+    background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("images/cta-bg.jpg") fixed center center;
+    background-size: cover;
+    padding: 120px 0;
+  }
+  
+  .cta h3 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  
+  .cta p {
+    color: #fff;
+  }
+  
+  .cta .cta-btn {
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .cta .cta-btn:hover {
+    background: #47b2e4;
+    border: 2px solid #47b2e4;
+  }
+  
+  @media (max-width: 1024px) {
+    .cta {
+      background-attachment: scroll;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .cta .cta-btn-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+
+  .contact-response{
+    min-height: 65vh;
+    background-color: #fff;
+    color: black;
+    padding-top: 150px;
+    
+  }
+
+  
+
+
+  
+
+
+ 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+    
+
+
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
