@@ -4,6 +4,8 @@ from django.core.mail import send_mail
 from django.http import HttpResponse
 from . models import GuestUser
 from django.core.mail import BadHeaderError, send_mail
+from django.conf import settings
+
 
 
 
@@ -31,7 +33,7 @@ def ContactFormView(request):
         ins.save()
 
 
-        send_mail(email, message, EMAIL_HOST_USER, ['geraldoduo@gmail.com'])   
+        send_mail(email, message, settings.EMAIL_HOST_USER, ['geraldoduo@gmail.com'])   
         return render(request, 'contact-response.html', {'name': name})
 
         
