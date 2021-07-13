@@ -156,4 +156,4 @@ EMAIL_HOST_PASSWORD = 'ruphinee254'
 EMAIL_USE_TLS = 'true'
 
 
-django_heroku.settings(local())
+django_heroku.settings(locals())
