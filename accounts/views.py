@@ -4,7 +4,7 @@ from django.core.mail import send_mail
 from django.http import HttpResponse
 from . models import GuestUser
 from django.core.mail import BadHeaderError, send_mail
-from GTech . settings import EMAIL_HOST_USER
+
 
 
 class IndexView(TemplateView):
