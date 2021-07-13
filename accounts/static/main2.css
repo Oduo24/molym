@@ -90,27 +90,18 @@ body {
 
 
     .paragraph{
-        margin-top: 0px;
-        padding: 3rem 5rem;
         font-size: 1.1rem;
         line-height: 1.4;
         text-align: justify;
     }
 
 
-    .service-title{
-        margin-top: 0rem;
-        margin-bottom: 0;
-        padding: 1rem 0rem 0rem 0rem;
-        text-align: center;
+   .service-title{
+     text-align: center;
+     padding-top: 2rem;
+   }
 
-
-    }
-
-    .service-section{
-        margin-top: 0px;
-        padding-left: 0rem;
-    }
+  
 
     .contact-wrap{
       background: linear-gradient(180deg, rgba(49,49,157,1) 50%, rgba(238,86,122,1) 92%);
@@ -138,6 +129,11 @@ body {
 
     footer{
       background-color: #000000; 
+    }
+
+    .more-text-center{
+      margin-bottom: 70px;
+      text-align: center;
     }
 
 
@@ -339,7 +335,7 @@ body {
   }
 
   .contact-response{
-    min-height: 65vh;
+    min-height: 60vh;
     background-color: #fff;
     color: black;
     padding-top: 150px;
