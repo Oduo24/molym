@@ -9,17 +9,17 @@ from django.conf import settings
 
 
 
-class IndexView(TemplateView):
-    template_name = "main2.html"
+def IndexView(request):
+    return render(request, 'home/main2.html')
 
-class WebDesignView(TemplateView):
-    template_name = "more-web-design.html"
+def WebDesignView(request):
+    return render(request, 'home/more-web-design.html')
 
-class GraphicsDesignView(TemplateView):
-    template_name = "more-graphics-design.html"
+def GraphicsDesignView(request):
+    return render(request, 'home/more-graphics-design.html')
 
-class SoftwareDevelopmentView(TemplateView):
-    template_name = "more-software-development.html"
+def SoftwareDevelopmentView(request):
+    return render(request, 'home/more-software-development.html')
 
 
 def ContactFormView(request):
@@ -34,7 +34,7 @@ def ContactFormView(request):
 
 
         send_mail(email, message, settings.EMAIL_HOST_USER, ['geraldoduo@gmail.com'])   
-        return render(request, 'contact-response.html', {'name': name})
+        return render(request, 'home/contact-response.html', {'name': name})
 
         
   
