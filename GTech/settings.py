@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home',
+    
+    
 ]
 
 MIDDLEWARE = [
@@ -161,3 +163,4 @@ EMAIL_USE_TLS = 'true'
 
 
 django_heroku.settings(locals())
+

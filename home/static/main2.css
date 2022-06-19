@@ -19,7 +19,7 @@ body {
     }
 
     a:hover{
-        color: #0ca024;
+        color: #09aa23;
         text-decoration: none;
         transition: 500ms;
     }
@@ -61,29 +61,47 @@ body {
     width: 22px;
   }
 
-  .karousel-1{
-    background: linear-gradient(rgba(40, 58, 90, 0.7), rgba(40, 58, 90, 0.7)), url("images/slider-1.jpg") fixed center center;
-    background-size: cover;
-    height: 70vh;
-    padding: 180px 0px;
-    
+  
+
+
+  
+  .carousel-size{
+    max-height: 70vh;
   }
 
-  .karousel-2{
-    background: linear-gradient(rgba(40, 58, 90, 0.7), rgba(40, 58, 90, 0.7)), url("images/slider-2.jpg") fixed center center;
-    background-size: cover;
-    height: 70vh;
-    padding: 180px 0px;
+  .carousel_position>h1{
+    position: absolute;
+    bottom: 45%;
+    left: 30vw;
+    right:30vw;
+    width: 40vw;
+    color: #fff;
+    text-align: center;
+    z-index: 12;
+    font-size: 5vw;
+    font-weight: 500;
   }
 
-  .karousel-3{
-    background: linear-gradient(rgba(40, 58, 90, 0.7), rgba(40, 58, 90, 0.7)), url("images/slider-5.jpg") fixed center center;
-    background-size: cover;
-    height: 70vh;
-    padding: 180px 0px;
+
+  .sign_up>a{
+    position: absolute;
+    bottom: 10%;
+    left: 40vw;
+    right:40vw;
+    width: 20vw;
+    color: #fff;
+    text-align: center;
+    z-index: 12;
+    font-size: 4vw;
+    font-weight: 500;
   }
 
 
+  
+
+
+
+  
    .service-intro{
        padding: 2rem 0rem 0rem 0rem;
    }
@@ -143,26 +161,10 @@ body {
         overflow: hidden;
         background: url('images/more-webdesign-bg.png') no-repeat center;
         background-size: cover;
-        
-        
+         
     }
 
-    .caption{
-        position: absolute;
-        top: 40%;
-        left: 34%;
-        transform: translate(-50px, -100px);
-        overflow: hidden;
-        font-weight: 700;
-        
-
-    }
-
-    .caption p{
-        font-size: 6.8vh;
-        
-    }
-
+    
     .far{
         color: #05fd2e;
         
@@ -342,7 +344,24 @@ body {
     
   }
 
+
+   i.fas{
+
+    color: #ffffff;
+    
   
+   }
+
+
+   .service_item{
+    height: 100px;
+    background-color: #ffffff;
+    box-shadow: 5px;
+    
+   }
+
+  
+
 
 
   

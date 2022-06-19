@@ -18,14 +18,14 @@
     
     
     
-    <title>Gtech</title>
+    <title>Obitrum</title>
   </head>
   <body>
     <!--NAVBAR-->
     <header class="header">
       <nav class="navbar navbar-expand-lg navbar">
         <div class="container-fluid">
-          <a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}" alt=""></a>
+          <a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'images/obitrum_logo.png' %}" alt=""></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             <span></span>
@@ -57,29 +57,39 @@
     <!--./END NAVBAR-->
 
     <!--CAROUSEL-->
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner text-center">
-        <div class="carousel-item active karousel-1">
-          <h1>Responsive <br> web design</h1>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active carousel-size">
+          <img src="{% static 'images/slider-1.png'%}" class="d-block w-100" alt="...">
+          <div class="carousel_position">
+            <h1>RESPONSIVE WEB DESIGN</h1>
+          </div>
         </div>
-        <div class="carousel-item karousel-2">
-          <h1>Creative <br> graphic designs</h1>      
+        <div class="carousel-item carousel-size">
+          <img src="{% static 'images/slider-3.png'%}" class="d-block w-100" alt="...">
+          <div class="carousel_position">
+            <h1>CREATIVE GRAPHIC DESIGNS</h1>
+          </div>
         </div>
-        <div class="carousel-item karousel-3">
-          <h1>High <br> performance softwares</h1>
+        <div class="carousel-item carousel-size">
+          <img src="{% static 'images/slider-5.png'%}" class="d-block w-100" alt="...">
+          <div class="carousel_position">
+            <h1>HIGH PERFORMANCE SOFTWARES</h1>
+          </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
+      
     </div>
-    
     <!--./END CAROUSEL-->
+    
 
     
 
@@ -234,7 +244,7 @@
           ></a>
     
           <!-- Twitter -->
-          <a class="btn btn-outline-light btn-floating m-1" href="http://twitter.com/molymtech" role="button"
+          <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"
             ><i class="fab fa-twitter"></i
           ></a>
     
@@ -244,15 +254,15 @@
           ></a>
     
           <!-- Linkedin -->
-          <a class="btn btn-outline-light btn-floating m-1" href="http://linkedin.com/in/gerald-ochieng-05774b162" role="button"
+          <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"
             ><i class="fab fa-linkedin-in"></i
           ></a>
         </div>
       
         <!-- Copyright -->
         <div class="text-center" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2021 Copyright:
-          <a class="text-white" href="https://molymtech.co.ke/">molymtech.co.ke</a>
+          © 2022 Copyright:
+          <a class="text-white" href="https://obitrumafrica.co.ke/">obitrumafrica.co.ke</a>
         </div>
         <!-- Copyright -->
       </footer>
